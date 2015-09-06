@@ -1,0 +1,8 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =6
+let g:netrw_dirhist_1='/home/deebeel/.vim/bundle/vim-snipmate'
+let g:netrw_dirhist_2='/home/deebeel/.vim/bundle'
+let g:netrw_dirhist_3='/home/deebeel/.vim/bundle/vim-snippets'
+let g:netrw_dirhist_4='/home/deebeel/.vim/bundle/vim-snippets/snippets'
+let g:netrw_dirhist_5='/home/deebeel/.vim/bundle/vim-snippets/snippets/javascript'
+let g:netrw_dirhist_6='/home/deebeel/.vim/bundle/vim-snipmate'

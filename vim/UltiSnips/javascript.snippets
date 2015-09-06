@@ -1,0 +1,82 @@
+priority -50
+
+snippet '':f "object method string"
+'${1:${2:#thing}:${3:click}}': function(element) {
+        ${VISUAL}$0
+}${10:,}
+endsnippet
+
+snippet :f "Object Method"
+${1:method_name}: function(${3:attribute}) {
+        ${VISUAL}$0
+}${10:,}
+endsnippet
+
+snippet :, "Object Value JS"
+${1:value_name}: ${0:value},
+endsnippet
+
+snippet : "Object key key: 'value'"
+${1:key}: ${2:"${3:value}"}${4:, }
+endsnippet
+
+snippet proto "Prototype (proto)"
+${1:class_name}.prototype.${2:method_name} = function(${3:first_argument}) {
+        ${VISUAL}$0
+};
+
+endsnippet
+
+snippet for "for (...) {...} (counting up)" b
+for (var ${1:i} = 0, ${2:len} = ${3:Things.length}; $1 < $2; $1++) {
+        ${VISUAL}$0
+}
+endsnippet
+snippet afun "arrow function"
+($1)=>{
+	${VISUAL}$0
+}
+endsnippet
+snippet fun "function (fun)"
+function ${1}(${2:argument}) {
+        ${VISUAL}$0
+}
+endsnippet
+
+
+snippet iife "Immediately-Invoked Function Expression (iife)"
+(function (${1:argument}) {
+        ${VISUAL}$0
+}(${2:$1}));
+endsnippet
+
+snippet timeout "setTimeout function"
+setTimeout(function() {
+        ${VISUAL}$0
+}${2:.bind(${3:this})}, ${1:10});
+endsnippet
+
+# Snippets for Console Debug Output
+
+
+snippet ce "console.error" b
+console.error(${1:"${VISUAL}"});
+endsnippet
+
+snippet ci "console.info" b
+console.info(${1:"${VISUAL}"});
+endsnippet
+
+snippet cl "console.log" b
+console.log(${1:"${VISUAL}"});
+endsnippet
+
+snippet cd "console.debug" b
+console.debug(${1:"${VISUAL}"});
+endsnippet
+
+snippet cw "console.warn" b
+console.warn(${1:"${VISUAL}"});
+endsnippet
+
+# vim:ft=snippets:
